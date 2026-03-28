@@ -2,7 +2,6 @@
 
 A version-controlled Claude Code configuration template, designed to be used as a **git submodule** across personal and professional development environments.
 
----
 
 ## Configuration Layering Model
 
@@ -20,7 +19,6 @@ Claude Code loads configuration from four scopes in priority order. Higher scope
 └─────────────────────────────────────────────────────────────┘
 ```
 
----
 
 ## File Inventory
 
@@ -69,7 +67,6 @@ Deployed by IT or a platform team. Takes highest priority and cannot be overridd
 | `managed-settings.json` | **MANAGED** | All | Org-wide settings policy |
 | `managed-mcp.json` | **MANAGED** | All | Org-wide MCP server allowlist/denylist |
 
----
 
 ## Using This Repo as a Submodule
 
@@ -88,7 +85,6 @@ Then import the shared `CLAUDE.md` from your project's own `CLAUDE.md`:
 @.claude-config/CLAUDE.md
 ```
 
----
 
 ## Skills Architecture
 
@@ -142,7 +138,6 @@ If two tiers define a skill with the same name, the higher tier wins:
 User  >  Project  >  Submodule
 ```
 
----
 
 ## Adding Local Overrides
 
@@ -172,7 +167,6 @@ Create `.claude/settings.local.json` to add machine-specific permissions or env 
 }
 ```
 
----
 
 ## Adding Path-Scoped Rules (.claude/rules/)
 
@@ -182,14 +176,12 @@ Rules files in `.claude/rules/` are committed and shared. Files without a `paths
 ---
 paths:
   - "**/*.tf"
----
 
 # Terraform Rules
 Always run `terraform validate` before proposing a plan.
 Never suggest `terraform destroy` without an explicit user request.
 ```
 
----
 
 ## Quick Reference: Useful Slash Commands
 
@@ -218,7 +210,6 @@ A curated subset of commands worth knowing. Run `/help` for the full list.
 | `Option+P` / `Alt+P` | Switch model without clearing the current prompt |
 | `Esc Esc` | Rewind or summarize the conversation |
 
----
 
 ## What to Gitignore
 
