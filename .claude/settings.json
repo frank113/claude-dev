@@ -1,14 +1,16 @@
 {
 	"$schema": "https://json.schemastore.org/claude-code-settings.json",
 	"permissions": {
-	  "allow": [
-		  "Bash(jq *)",
-		  "Bash(terraform plan)",
-		  "Bash(terraform fmt)",
-		  "Bash(terraform validate)",
+	"allow": [
+		"Bash(jq *)",
+		"Bash(terraform plan)",
+		"Bash(terraform fmt)",
+		"Bash(terraform validate)",
 		"Bash(npm run lint)",
 		"Bash(npm run test *)",
-		"Read(~/.zshrc)"
+		"Read(~/.zshrc)",
+		"Edit(.claude/skills/*)",
+		"Edit(.claude/skills/*/SKILL.md)"
 	  ],
 	  "deny": [
 		  "Bash(git add *)",
@@ -25,6 +27,6 @@
 	  "OTEL_METRICS_EXPORTER": "otlp"
 	},
 	"companyAnnouncements": [
-	  "Welcome to the Walt Disney Company! On the data platform team we value code that is readable, safe and securty above all else. "
+	  ""
 	]
   }
