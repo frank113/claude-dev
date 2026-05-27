@@ -24,7 +24,8 @@
 	},
 	"env": {
 	  "CLAUDE_CODE_ENABLE_TELEMETRY": "0",
-	  "OTEL_METRICS_EXPORTER": "otlp"
+	  "OTEL_METRICS_EXPORTER": "otlp",
+	  "CLAUDE_CODE_ENABLE_AWAY_SUMMARY": "0"
 	},
 	"companyAnnouncements": [
 	  ""
