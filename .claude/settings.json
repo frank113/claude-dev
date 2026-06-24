@@ -7,10 +7,7 @@
 		"Bash(terraform fmt)",
 		"Bash(terraform validate)",
 		"Bash(npm run lint)",
-		"Bash(npm run test *)",
-		"Read(~/.zshrc)",
-		"Edit(.claude/skills/*)",
-		"Edit(.claude/skills/*/SKILL.md)"
+		"Bash(npm run test *)"
 	  ],
 	  "deny": [
 		  "Bash(git add *)",
