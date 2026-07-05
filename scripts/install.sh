@@ -7,7 +7,7 @@ set -euo pipefail
 SCRIPTS_DIR="$(cd "$(dirname "$0")" && pwd)"
 
 echo ""
-echo "==> settings.json → ~/.claude/settings.local.json"
+echo "==> settings.json → ~/.claude/settings.json"
 bash "$SCRIPTS_DIR/install_settings.sh"
 
 echo ""
