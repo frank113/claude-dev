@@ -31,4 +31,24 @@ The configurations managed in this repository respects Anthropic's settings hier
 3. Project settings: Located in a repository's `.claude/settings.json`. Version-controlled
 4. Project-local settings: Settings specific to a user in a project. Stored in `.claude/settings.local.json`. Not committed.
 
-In this repository we will store and promote tier 2, or user settings via the `scripts/` folder. 
+In this repository we will store and promote tier 2, or user settings via the `scripts/` folder.
+
+## Philosophy
+
+When creating these settings I adhered to the following guiding principles.
+
+**1. Allow lists define an agent's powers, deny lists form an agent's guardrails**
+
+When configuring allow and deny lists we can think of 
+
+**2. Skills are reusable procedures, agents are reusable personas**
+
+**3. Define what global means**
+
+**4. Style Matters**
+
+## Commentary
+
+This section will serve as a running commentary of how I came to arrive at my rules and credits to those who inspired certain configurations.
+
++ `PreToolUse` Deletion Hook: Taken directly from [Marco Lancini](https://blog.marcolancini.it/2026/blog-my-claude-code-setup/). Interesting guardrail that will be eternally useful as Claude becomes more agentic.
