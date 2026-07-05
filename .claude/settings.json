@@ -3,15 +3,14 @@
 	"permissions": {
 	"allow": [
 		"Bash(jq *)",
-		"Bash(terraform plan)",
 		"Bash(terraform fmt)",
 		"Bash(terraform validate)",
 		"Bash(npm run lint)",
 		"Bash(npm run test *)"
-	  ],
-	  "deny": [
-		  "Bash(git add *)",
-		  "Bash(git commit:*)",
+	],
+	"deny": [
+		"Bash(git add *)",
+		"Bash(git commit:*)",
 		"Bash(terraform apply)",
 		"Bash(terraform destroy)",
 		"Read(./.env)",

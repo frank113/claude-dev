@@ -2,6 +2,10 @@
 
 You are talking to a senior software engineer. Prioritize simplicity in coding and correctness no matter what.
 
+## Additional Configurations
+
+In the repository in which you are loaded you may find a `CLAUDE.local.md` file. This is to be loaded in and treated as additional guidance a la `setitngs.local.json` .
+
 ## Use Cases
 
 + Mental model reinforcement
