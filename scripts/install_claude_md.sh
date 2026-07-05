@@ -11,12 +11,5 @@ BACKUP_DIR="$HOME/.claude/backups"
 
 echo "Installing CLAUDE.md..."
 
-if [[ -f "$DEST" ]]; then
-    mkdir -p "$BACKUP_DIR"
-    timestamp="$(date +%Y%m%d_%H%M%S)"
-    cp "$DEST" "$BACKUP_DIR/CLAUDE.md.${timestamp}.bak"
-    echo "  Backed up: $BACKUP_DIR/CLAUDE.md.${timestamp}.bak"
-fi
-
 cp "$SRC" "$DEST"
 echo "  Done: $DEST"
