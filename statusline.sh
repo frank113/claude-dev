@@ -4,7 +4,7 @@ set -euo pipefail
 ## colors
 R='\033[0m'
 
-# Regular colors
+## Regular colors
 BLACK='\033[0;30m'
 RED='\033[0;31m'
 GREEN='\033[0;32m'
@@ -14,16 +14,16 @@ MAGENTA='\033[0;35m'
 CYAN='\033[0;36m'
 WHITE='\033[0;37m'
 
-# Bold
+## Bold
 BOLD_RED='\033[1;31m'
 BOLD_GREEN='\033[1;32m'
 BOLD_YELLOW='\033[1;33m'
 BOLD_CYAN='\033[1;36m'
 
-# Dim
+## Dim
 DIM='\033[2m'
 
-# Background colors
+## Background colors
 BG_RED='\033[41m'
 BG_GREEN='\033[42m'
 BG_YELLOW='\033[43m'
