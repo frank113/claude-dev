@@ -67,4 +67,4 @@ To make best use of Claude it must write code that mimics my personal style and 
 This section will serve as a running commentary of how I came to arrive at my rules and credits to those who inspired certain configurations.
 
 + `PreToolUse` Deletion Hook: Taken directly from [Marco Lancini](https://blog.marcolancini.it/2026/blog-my-claude-code-setup/). Interesting guardrail that will be eternally useful as Claude becomes more agentic.
-+ `General` section of `CLAUDE.md`: Taken from [Freek Van der Herten](https://freek.dev/3026-my-claude-code-setup). His observation of model syncophancy is an interesting guardrail that I found myself prompting against.
++ `General` section of `CLAUDE.md`: Taken from [Freek Van der Herten](https://freek.dev/3026-my-claude-code-setup). His observation of model sycophancy is an interesting guardrail that I found myself prompting against.

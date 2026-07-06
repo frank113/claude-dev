@@ -5,7 +5,7 @@ paths:
 
 # Python Docstrings
 
-For functions that are more substantial than a one-liner helper function use a Google-style docstring. This docustring should at a minimum describe what the function does in simple English.
+For functions that are more substantial than a one-liner helper function use a Google-style docstring. This docstring should at a minimum describe what the function does in simple English.
 
 When creating a docstring there should be a newline after and before the closing three comments.
 

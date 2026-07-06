@@ -21,8 +21,8 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip setuptools
-        python -m pip install pyspelling
-        # Install any additional libraries required: additional plugins, documentation building libraries, etc.
+        python -m pip install -r requirements.txt
+
     - name: Install Aspell
       run: |
         sudo apt-get install aspell aspell-en --yes
@@ -31,4 +31,4 @@ jobs:
         # Perform any documentation building that might be required
     - name: Run spellcheck
       run: |
-        python -m pyspelling -g *.md
+        python -m pyspelling

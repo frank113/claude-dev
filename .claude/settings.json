@@ -12,7 +12,11 @@
       "Bash(git diff --stat)",
       "Bash(git diff)",
       "Bash(source .venv/bin/activate)",
-      "Grep(*)"
+      "Grep(*)",
+      "Glob(*)",
+      "Read(*)",
+      "WebFetch(*)",
+      "WebSearch(*)"
     ],
     "deny": [
       "Bash(git add *)",

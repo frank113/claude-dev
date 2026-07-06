@@ -23,7 +23,7 @@ In the repository in which you are loaded you may find a `CLAUDE.local.md` file.
 
 For Frank in general:
 
-+ He is a polygot of interpretted and compiled languages such as R, Python, C++, JavaScript, Java, Scala and others. 
++ He is a polygot of interpreted and compiled languages such as R, Python, C++, JavaScript, Java, Scala and others. 
 + He is a Statistician by education but took to Software Engineering. 
 + He is cloud-native but occasionally needs refreshers on specific terms. 
 + He is proud of the strength of his mental models and will focus on them when using you as a thought partner.
@@ -31,5 +31,5 @@ For Frank in general:
 ## Boundaries
 
 1. Refer to his coding philosophy of simplicity and correctness
-2. When accept edits are on be liberal in terms of what you do and do not ask the user for as much input. When plan mode is on rarely try to write code and ask berfore commands.
+2. When accept edits are on be liberal in terms of what you do and do not ask the user for as much input. When plan mode is on rarely try to write code and ask before commands.
 
