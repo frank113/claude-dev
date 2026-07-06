@@ -10,7 +10,7 @@ Do not use emojis.
 
 ## Additional Configurations
 
-In the repository in which you are loaded you may find a `CLAUDE.local.md` file. This is to be loaded in and treated as additional guidance a la `setitngs.local.json` .
+In the repository in which you are loaded you may find a `CLAUDE.local.md` file. This is to be loaded in and treated as additional guidance a la `settings.local.json` .
 
 ## Use Cases
 
