@@ -1,0 +1,28 @@
+matrix:
+  - name: Markdown
+    sources:
+      - CLAUDE.md
+      - README.md
+      - CONTRIBUTING.md
+      - .claude/rules/*.md
+      - .claude/rules/r/*.md
+      - .claude/rules/python/*.md
+      - .claude/skills/start-repo/*.md
+      - .claude/agents/*.md
+    aspell:
+      lang: en
+    dictionary:
+      output: .spelling
+    pipeline:
+      - pyspelling.filters.context:
+          context_visible_first: false
+          delimiters:
+            - open: '^---$'
+              close: '^---$'
+      - pyspelling.filters.markdown:
+          markdown_extensions:
+            - pymdownx.superfences
+      - pyspelling.filters.html:
+          ignores:
+            - code
+            - pre

@@ -1,32 +1,71 @@
 {
-	"$schema": "https://json.schemastore.org/claude-code-settings.json",
-	"permissions": {
-	"allow": [
-		"Bash(jq *)",
-		"Bash(terraform plan)",
-		"Bash(terraform fmt)",
-		"Bash(terraform validate)",
-		"Bash(npm run lint)",
-		"Bash(npm run test *)",
-		"Read(~/.zshrc)",
-		"Edit(.claude/skills/*)",
-		"Edit(.claude/skills/*/SKILL.md)"
-	  ],
-	  "deny": [
-		  "Bash(git add *)",
-		  "Bash(git commit:*)",
-		"Bash(terraform apply)",
-		"Bash(terraform destroy)",
-		"Read(./.env)",
-		"Read(./.env.*)",
-		"Read(./secrets/**)"
-	  ]
-	},
-	"env": {
-	  "CLAUDE_CODE_ENABLE_TELEMETRY": "0",
-	  "OTEL_METRICS_EXPORTER": "otlp"
-	},
-	"companyAnnouncements": [
-	  ""
-	]
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
+  "permissions": {
+    "allow": [
+      "Bash(jq .*)",
+      "Bash(terraform fmt)",
+      "Bash(terraform validate)",
+      "Bash(npm run lint)",
+      "Bash(npm run test)",
+      "Bash(pytest)",
+      "Bash(git status)",
+      "Bash(git diff --stat)",
+      "Bash(git diff)",
+      "Bash(source .venv/bin/activate)",
+      "Grep(*)",
+      "Glob(*)",
+      "WebFetch(*)",
+      "WebSearch(*)"
+    ],
+    "deny": [
+      "Bash(git add *)",
+      "Bash(git commit:*)",
+      "Bash(terraform apply)",
+      "Bash(terraform destroy)",
+      "Read(./.env)",
+      "Read(./.env.*)",
+      "Read(./secrets/**)"
+    ]
+  },
+  "attribution": {
+    "commit": "",
+    "pr": ""
+  },
+  "env": {
+    "CLAUDE_CODE_ENABLE_TELEMETRY": "0",
+    "DISABLE_ERROR_REPORTING": "1"
+  },
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "cat CLAUDE.local.md 2>/dev/null || true"
+          }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "CMD=$(jq -r '.tool_input.command'); if echo \"$CMD\" | grep -qE 'rm[[:space:]]+-[^[:space:]]*r[^[:space:]]*f'; then echo 'BLOCKED: Use trash instead of rm -rf' >&2; exit 2; fi"
+          }
+        ]
+      }
+    ]
+  },
+  "statusLine": {
+    "type": "command",
+    "command": "bash ~/.claude/statusline.sh"
+  },
+  "respectGitignore": false,
+  "theme": "light",
+  "awaySummaryEnabled": false,
+  "companyAnnouncements": [
+  ]
   }

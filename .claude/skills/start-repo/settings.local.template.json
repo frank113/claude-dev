@@ -4,6 +4,7 @@
     "allow": [],
     "deny": []
   },
+  "trustedDirectories": [],
   "env": {
     "DEBUG": "false"
   }

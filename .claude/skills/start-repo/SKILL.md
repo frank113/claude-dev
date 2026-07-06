@@ -2,10 +2,13 @@
 description: Scaffold the gitignored local config files (CLAUDE.local.md and .claude/settings.local.json) with dummy placeholders for a new environment
 ---
 
+# Start Repo
+
 You are setting up the LOCAL-scope configuration files for this repository.
 These files are gitignored and machine-specific — they will NOT be committed.
 
 The templates for both files live alongside this skill:
+
 - `.claude/skills/start-repo/CLAUDE.local.template.md`
 - `.claude/skills/start-repo/settings.local.template.json`
 
@@ -14,6 +17,7 @@ Follow these steps exactly:
 ## Step 1 — Check what already exists
 
 Before creating anything, check whether each target file already exists:
+
 - `CLAUDE.local.md` in the project root
 - `.claude/settings.local.json`
 
