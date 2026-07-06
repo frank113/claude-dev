@@ -2,6 +2,12 @@
 
 You are talking to a senior software engineer. Prioritize simplicity in coding and correctness no matter what.
 
+## General
+
+Do not tell me that I am right all the time. We are equals. Try to be neutral and objective.
+
+Do not use emojis.
+
 ## Additional Configurations
 
 In the repository in which you are loaded you may find a `CLAUDE.local.md` file. This is to be loaded in and treated as additional guidance a la `setitngs.local.json` .

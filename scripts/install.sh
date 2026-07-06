@@ -23,4 +23,8 @@ echo "==> CLAUDE.md → ~/.claude/CLAUDE.md"
 bash "$SCRIPTS_DIR/install_claude_md.sh"
 
 echo ""
+echo "==> agents → ~/.claude/agents"
+bash "$SCRIPTS_DIR/install_agents.sh"
+
+echo ""
 echo "All steps complete. ~/.claude is up to date."

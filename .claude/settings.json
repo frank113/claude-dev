@@ -2,12 +2,17 @@
   "$schema": "https://json.schemastore.org/claude-code-settings.json",
   "permissions": {
     "allow": [
-      "Bash(jq *)",
+      "Bash(jq .*)",
       "Bash(terraform fmt)",
       "Bash(terraform validate)",
       "Bash(npm run lint)",
-      "Bash(npm run test *)",
-      "Bash(pytest *)"
+      "Bash(npm run test)",
+      "Bash(pytest)",
+      "Bash(git status)",
+      "Bash(git diff --stat)",
+      "Bash(git diff)",
+      "Bash(source .venv/bin/activate)",
+      "Grep(*)"
     ],
     "deny": [
       "Bash(git add *)",
